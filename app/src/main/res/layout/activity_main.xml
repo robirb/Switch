@@ -10,7 +10,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="New switch"
-        android:id="@+id/switch"
+        android:id="@+id/switch1"
+        android:textSize="20dp"
+        android:textColor="#00B0FF"
         android:layout_marginTop="50dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
@@ -21,8 +23,11 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:absListViewStyle"
         android:id="@+id/textView"
-        android:layout_below="@+id/switch"
+        android:layout_below="@+id/switch1"
         android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:textStyle="bold"
+       android:textColor="#76FF03"
         android:layout_marginTop="50dp"/>
 
 </RelativeLayout>

@@ -2,6 +2,7 @@ package com.example.robirb.aswitch;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.CompoundButton;
 import android.widget.Switch;
 import android.widget.TextView;
@@ -17,14 +18,18 @@ public class MainActivity extends AppCompatActivity {
 
         textView = (TextView) findViewById(R.id.textView);
         switch1 = (Switch) (Switch) findViewById(R.id.switch1);
-        switch1.setOnCheckedChangeListener((CompoundButton.OnCheckedChangeListener) this);
+        switch1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (switch1.isChecked()){
+                    textView.setText("switch on");
 
-        if (switch1.isChecked()){
-            textView.setText("switch on");
-        }else{
-            textView.setText("switch off");
-        }
+                }else{
+                    textView.setText("switch off");
+                }
 
+            }
+        });
 
     }
 
